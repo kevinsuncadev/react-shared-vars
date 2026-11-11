@@ -1,6 +1,14 @@
 {
     "name": "react-shared-vars",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kevinsuncadev/react-shared-vars.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kevinsuncadev/react-shared-vars/issues"
+    },
+    "homepage": "https://github.com/kevinsuncadev/react-shared-vars",
     "description": "A high-performance, self-cleaning key-value global variable manager for React using useSyncExternalStore.",
     "type": "module",
     "main": "./dist/index.cjs",
