@@ -1,0 +1,39 @@
+{
+    "name": "react-shared-vars",
+    "version": "1.0.0",
+    "description": "A high-performance, self-cleaning key-value global variable manager for React using useSyncExternalStore.",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/index.js --external:react && esbuild src/index.js --bundle --format=cjs --outfile=dist/index.cjs --external:react",
+        "dev": "esbuild src/index.js --bundle --format=esm --outfile=dist/index.js --external:react --watch",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0 || ^20.0.0"
+    },
+    "keywords": [
+        "react",
+        "state",
+        "redux-alternative",
+        "useSyncExternalStore",
+        "variables",
+        "performance"
+    ],
+    "author": "Kevin Sun",
+    "license": "MIT",
+    "devDependencies": {
+        "esbuild": "^0.28.2",
+        "react": "^19.3.1"
+    }
+}
